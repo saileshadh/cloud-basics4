@@ -2,7 +2,7 @@
 
 CODEPIPELINE_CFN_STACK_NAME="github-wordpress-codepipeline"
 
-set -eu
+set CODEPIPELINE_CFN_STACK_NAME=MyCodePipelineStack
 
 aws cloudformation create-stack \
         --capabilities CAPABILITY_IAM \
